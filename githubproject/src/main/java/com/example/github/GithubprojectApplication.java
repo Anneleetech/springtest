@@ -2,8 +2,11 @@ package com.example.github;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication
+@SpringBootApplication //스프링부트앱
+@ComponentScan(basePackages = "db_jasypt")
+@ComponentScan(basePackages = "lombok")
 public class GithubprojectApplication {
 
 	public static void main(String[] args) {
